@@ -4,3 +4,8 @@ public struct TestDataLayer {
     public init() {
     }
 }
+
+public struct TestTT {
+    public let name: String = "Hi"
+    public init() {}
+}

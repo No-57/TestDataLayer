@@ -26,8 +26,3 @@ let package = Package(
             dependencies: ["TestDataLayer"]),
     ]
 )
-
-public struct TestTT {
-    public let name: String = "Hi"
-    public init() {}
-}
