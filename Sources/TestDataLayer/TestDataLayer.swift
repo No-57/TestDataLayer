@@ -13,7 +13,21 @@ public struct TestTT {
 import Foundation
 import CoreData
 
-@objc(Product_Core_Data)
-public class Product_Core_Data: NSManagedObject {
+@objc(Product)
+public class Product: NSManagedObject {
+
+}
+
+extension Product {
+
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Product> {
+        return NSFetchRequest<Product>(entityName: "Product")
+    }
+
+    @NSManaged public var name: String?
+
+}
+
+extension Product : Identifiable {
 
 }
