@@ -6,3 +6,25 @@
 //
 
 import Foundation
+
+import Foundation
+import CoreData
+
+@objc(Product)
+public class Product: NSManagedObject {
+
+}
+
+extension Product {
+
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Product> {
+        return NSFetchRequest<Product>(entityName: "Product")
+    }
+
+    @NSManaged public var name: String?
+
+}
+
+extension Product : Identifiable {
+
+}
